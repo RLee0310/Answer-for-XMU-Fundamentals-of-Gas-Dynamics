@@ -154,7 +154,7 @@
 \addcontentsline{toc}{section}{0 \hspace{0.5em} Document Introduction} % 手动加入目录
 
 This document is typeset using \LaTeX. I only handled the typesetting and partial proofreading, \textcolor{red}{so some answers may contain errors}. Please verify them yourself.  
-If you need the \LaTeX\ source code, please visit this project: \mylink{https://www.keepresearch.com/editor/RebeccaLee050310/XMUAEROGasDynamicsAnswer}{Answer}.  
+If you need the \LaTeX\ source code, please visit this project: \mylink{https://github.com/Rebeccived/Answer-for-XMU-Fundamentals-of-Gas-Dynamics}{Answer}.  
 
 You can also contact me via email: \mylink{mailto:1137832391@qq.com}{1137832391@qq.com}.
 
@@ -1196,11 +1196,28 @@ So $M_1=1.39$.
 (a) Compute $M_2$, $T_2/T_1$, and $p_2/p_1$ via the Prandtl–Meyer compression which occurs close to the wall.\\
 (b) Compute $M_2^{\prime}$, $\pp{T_2}/T_1$, and $\pp{p_2}/p_1$ via the oblique shock that forms away from the wall. Assume that this flow is also deflected by \ang{30}.\\
 (c) Draw a T–s diagram showing each process.\\
-(d) Can these two regions coexist next to one another?
+(d) Can these two regions coexist next to one another?\\
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{pic/P8.6.png}
+  \caption{Figure 8.2}
+\end{figure}
 }
 
 \begin{answerbox}
+(a) \(M_1=4.0\), Check the table: $\nu_1=\ang{65.78}$, $\dfrac{p_1}{p_{t1}}=0.00659$, $\dfrac{T_1}{T_{t1}}=0.23810$.
 
+Form Figure 8.2 we gain $\Delta \nu=\ang{-30}$, thus $\nu_2=\ang{35.78}$.
+
+Check the table: $M_2=2.36$, $\dfrac{p_2}{p_{t2}}=0.07281$, $\dfrac{T_2}{T_2^{t2}}=0.47305$.
+
+So $p_2/p_1=11.05$, $T_2/T_1=1.987$.
+
+(b) From Figure 8.2 we know $\delta=\ang{30}$.
+
+And $M_1=4.0$, it's a weak shock, Thus $\theta=\ang{45.22}$.
+
+Thus $M_2=1.85$
 \end{answerbox}
 
 \question{8.12}{Air flows through a converging–diverging nozzle that has an area ratio of $3.5$. The nozzle is operating at its third critical (design condition). The jet stream strikes a twodimensional wedge with a total wedge angle of \ang{40} as shown in Figure P8.12.\\
