@@ -6,4 +6,4 @@
 
 若有任何问题可通过邮箱amourse81@gmail.com联系我
 
-<img width="1169" height="1169" alt="XMULogo" src="https://github.com/user-attachments/assets/f7a2fc4a-5aed-4bb0-a413-b42fd57b9cae" />
+<img width="585" height="585" alt="XMULogo" src="https://github.com/user-attachments/assets/89a80d8f-2f9c-4030-80e0-11cb8cd3c742" />
