@@ -23,7 +23,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\textsc{Solutions to End-of-Chapter Problems}}  % 页眉左侧
+\fancyhead[L]{\textit{Solutions to End-of-Chapter Problems}}
 \fancyfoot[C]{\thepage}          % 页脚居中页码
 
 
@@ -60,7 +60,7 @@
    \makebox[\questionlabelwidth][l]{\textbf{#1}}#2\par}%
 }
 
-
+\definecolor{BPink}{RGB}{242, 62, 112}
 
 % 答案块：莫兰迪蓝风格
 \definecolor{morandiBlue}{RGB}{160,175,190} % 柔和蓝灰
@@ -154,14 +154,28 @@
 \addcontentsline{toc}{section}{0 \hspace{0.5em} Document Introduction} % 手动加入目录
 
 This document is typeset using \LaTeX. I only handled the typesetting and partial proofreading, \textcolor{red}{so some answers may contain errors}. Please verify them yourself.  
-If you need the \LaTeX\ source code, please visit this project: \mylink{https://github.com/Rebeccived/Answer-for-XMU-Fundamentals-of-Gas-Dynamics}{Answer}.  
 
-You can also contact me via email: \mylink{mailto:1137832391@qq.com}{1137832391@qq.com}.
+If you need the \LaTeX\ source code, please visit this Github repository: \mylink{https://github.com/RLee0310/Answer-for-XMU-Fundamentals-of-Gas-Dynamics/tree/main}{Answer} to gain the source code.  
+
+I would like someone to continue updating this document. If anyone has ideas in this area, you can contact me via email to become a contributor to this repository.
+
+\textbf{My email address:} 
+
+QQMail: \mylink{mailto:1137832391@qq.com}{1137832391@qq.com}
+
+GMail: ~\mylink{mailto: amourse81@gmail.com}{amourse81@gmail.com}.
+
+It should be noted that students in China cannot directly access GitHub, so you may need to use circumvention tools (like a VPN or proxy) to access it.
 
 Here I would like to recommend \mylink{https://www.keepresearch.com}{Keepresearch}, which is a free online \LaTeX\ editor. Compared with Overleaf, it is more suitable for Chinese students.
+This project, including the source code, is also available on \textit{Keepresearch}. If you wish to use \textit{Keepresearch} to edit the document, you can also contact me via email.
 
 The document uses \textbf{EB Garamond} as the main font. EB Garamond is an elegant classical serif font, but for Chinese students, reading it may be somewhat challenging.  
 Here we list all the English upright letters, italic letters and Greek letters in EB Garamond for easier reference.
+
+\begin{center}
+\Large \textcolor{BPink}{\textbf{Hope you all achieve good grades in this course.}}
+\end{center}
 
 \subsection*{English Letters}
 
@@ -803,7 +817,8 @@ So $\dfrac{A_2}{A_1}=3.35$.
 (b)	What is the area ratio $A_1/A_2$?
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{pic/p6.5.png}
+  \includegraphics[width=0.5\textwidth]{pic/P6.5.png}
+  \caption{Figure P6.5}
 \end{figure}
 }
 
@@ -823,7 +838,7 @@ So $\dfrac{A_1}{A_2}=\dfrac{A_1}{A_1^{*}}\dfrac{A_1^{*}}{A_2^{*}}\dfrac{A_2^{*}}
 \question{6.11}{The diverging section of a supersonic nozzle is formed from the frustrum of a cone. When operating at its third critical point with nitrogen, the exit Mach number is $2.6$. Compute the operating pressure ratio that will locate a normal shock as shown in Figure P6.11.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\textwidth]{pic/p6.11.png}
+  \includegraphics[width=0.5\textwidth]{pic/P6.11.png}
   \caption{Figure P6.11}
 \end{figure}
 }
@@ -1180,7 +1195,7 @@ Check the table: $M_2=3.65$, $\nu_2=60.85$.
 
 Because $\theta_3=\mu_1-\mu_2+\Delta \nu$, $\Delta \nu=\nu_2-\nu_1$,
 
-$\mu_1=\cot^{-1}(M_1^2-1)^{\frac{1}{2}}$, $\nu_1=\left(\dfrac{\gamma+1}{\gamma-1}\right)^{\frac{1}{2}}\tan^{-1}\left[\dfrac{\gamma-1}{\gamma+1}(M_1^2-1)\right]-\tan^{-1}(M_1^2-1)^{\frac{1}{2}}$.
+$\mu_1=\cot^{-1}(M_1^2-1)^{\frac{1}{2}}$, $\nu_1=\left(\dfrac{\gamma+1}{\gamma-1}\right)^{\frac{1}{2}}\tan^{-1}\left[\dfrac{\gamma-1}{\gamma+1}(M_1^2-1)\right]^{\frac{1}{2}}-\tan^{-1}(M_1^2-1)^{\frac{1}{2}}$.
 
 Thus:
 \[
@@ -1197,7 +1212,7 @@ So $M_1=1.39$.
 (b) Compute $M_2^{\prime}$, $\pp{T_2}/T_1$, and $\pp{p_2}/p_1$ via the oblique shock that forms away from the wall. Assume that this flow is also deflected by \ang{30}.\\
 (c) Draw a T–s diagram showing each process.\\
 (d) Can these two regions coexist next to one another?\\
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.5\textwidth]{pic/P8.6.png}
   \caption{Figure 8.2}
@@ -1217,7 +1232,22 @@ So $p_2/p_1=11.05$, $T_2/T_1=1.987$.
 
 And $M_1=4.0$, it's a weak shock, Thus $\theta=\ang{45.22}$.
 
-Thus $M_2=1.85$
+Thus $M_2=1.85$, $\dfrac{p_2}{p_1}=9.243$, $\dfrac{T_2}{T_1}=2.495$.
+
+(c) For (a) it's isentropic flow. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{pic/A8.6_1.png}
+\end{figure}
+
+For (b):
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{pic/A8.6_2.png}
+\end{figure}
+
+(d) No.
 \end{answerbox}
 
 \question{8.12}{Air flows through a converging–diverging nozzle that has an area ratio of $3.5$. The nozzle is operating at its third critical (design condition). The jet stream strikes a twodimensional wedge with a total wedge angle of \ang{40} as shown in Figure P8.12.\\
@@ -1232,7 +1262,32 @@ Thus $M_2=1.85$
 }
 
 \begin{answerbox}
+The nozzle is operating at its third critical (design condition), thus $M_1=2.8$, $p_1=p_{\mathrm{amb}}$.
 
+(a) For $\delta=\ang{20}$, thus $\theta=\ang{39.48}$, $M_2=1.86$.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{pic/A8.12_1.png}
+\end{figure}
+
+(b) After the shock, $p_2=3.53p_1=3.53p_{\mathrm{amb}}$.
+
+When an oblique shock wave encounters a free boundary, a Prandtl-Meyer expansion wave is generated to ensure pressure equilibrium.
+
+Thus $p_3=p_{\mathrm{amb}}$.
+
+Check the table we gain $M_3=2.67$, $\nu_3=\ang{42.7}$.
+
+And $\nu_2=\ang{22.2}$, so $\Delta \nu=\ang{20.5}$.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{pic/A8.12_2.png}
+\end{figure}
+
+(c) $M_2=1.86$, \ang{20} from centerline.
+
+$M_3=2.67$, \ang{40.5} from centerline.
 \end{answerbox}
 
 \question{8.15}{Consider the expression for the Prandtl–Meyer function that is given in equation (8.48).\\
@@ -1246,7 +1301,31 @@ Thus $M_2=1.85$
 }
 
 \begin{answerbox}
+$\nu(M)=\left(\dfrac{\gamma+1}{\gamma-1}\right)^{\frac{1}{2}}\tan^{-1}\left[\dfrac{\gamma-1}{\gamma+1}(M^2-1)\right]^{\frac{1}{2}}-\tan^{-1}(M^2-1)^{\frac{1}{2}}$
 
+(a) Differentiating the above equation yields:$\dfrac{\mathrm{d}\nu}{\mathrm{d}M} = \dfrac{\sqrt{M^2-1}}{M \left( 1 + \frac{\gamma-1}{2} M^2 \right)}$.
+
+For $M>1$, we always have: $\dfrac{\mathrm{d}\nu}{\mathrm{d}M}>0$.
+
+Thus This is a monotonically increasing function, and it reaches its maximum value when $M \to \infty$.
+
+So $\displaystyle \nu_{\max}=\lim_{M \to \infty}\left(\dfrac{\gamma+1}{\gamma-1}\right)^{\frac{1}{2}}\tan^{-1}\left[\dfrac{\gamma-1}{\gamma+1}(M^2-1)\right]^{\frac{1}{2}}-\tan^{-1}(M^2-1)^{\frac{1}{2}}=\dfrac{\pi}{2}\left(\sqrt{\dfrac{\gamma+1}{\gamma-1}}-1\right)$.
+
+(b) $M \to \infty$.
+
+(c) $\gamma = 1.4$, so $\nu_{\max}=\ang{130.45}$.
+
+From equation (8.40), we obtain: $\nu_{1.0}=\ang{0}$, $\nu_{2.0}=\ang{26.37}$, $\nu_{5.0}=\ang{76.92}$, $\nu_{10.0}=\ang{102.31}$.
+
+So $\Delta \nu_{1.0}=\ang{130.45}$, $\Delta \nu_{2.0}=\ang{104.08}$, $\Delta \nu_{5.0}=\ang{53.53}$, $\Delta \nu_{1.0}=\ang{28.14}$.
+
+(d) For it's isentropic, $T_t=T_1\left(1+\dfrac{\gamma-1}{2}M_1^2\right)=1080\,\si{\Rankine}=\mathrm{const}$.
+
+When air expands through its maxiumum turning angle, $M_2 = \infty$, thus $T_2\to 0$
+
+So from $h_t=h_2+\dfrac{V_2^2}{2g_c}$ we gain $c_p T_t=c_p T_2+\dfrac{V_2^2}{2g_c}$.
+
+Thus $V_2=\sqrt{2 g_c c_p T_t}=3604$\,\si{ft/sec}.
 \end{answerbox}
 
 \question{8.16}{Flow, initially at a Mach number of unity, expands around a corner through angle $\nu$ and reaches Mach number $M_2$ (see Figure P8.16). Lengths $L_1$ and $L_2$ are measured perpendicular to the wall and measure the distance out to the same streamline as shown.\\
@@ -1260,7 +1339,23 @@ Thus $M_2=1.85$
 }
 
 \begin{answerbox}
+(a) From continuity equation: $\rho_1 V_1 A_1=\rho_2 V_2 A_2$.
 
+For For a two-dimensional flow with a constant depth $b$, $A=bL$.
+
+Thus $\rho_1 V_1 A_1=\rho_2 V_2 A_2 \rightarrow \rho_1 V_1 L_1=\rho_2 V_2 L_2 \Rightarrow \dfrac{L_2}{L_1}=\dfrac{\rho_1 V_1}{\rho_2 V_2}$.
+
+In an isentropic flow: $T=T_t\left(1+\dfrac{\gamma-1}{2}M^2\right)^{-1}$, $\rho = \rho_t \left( 1 + \dfrac{\gamma-1}{2} M^2 \right)^{-\frac{1}{\gamma-1}}$
+
+And $V=Ma=M\sqrt{\gamma g_c R T}$.
+
+So $\rho V=\rho_t \sqrt{\gamma g_c R T_t}M\left(1+\dfrac{\gamma-1}{2}M^2\right)^{-\frac{\gamma+1}{2(\gamma-1)}}$.
+
+So $\dfrac{L_2}{L_1}=\dfrac{M_1\left(1+\frac{\gamma-1}{2}M_1^2\right)^{-\frac{\gamma+1}{2(\gamma-1)}}}{M_2\left(1+\frac{\gamma-1}{2}M_2^2\right)^{-\frac{\gamma+1}{2(\gamma-1)}}}$.
+
+$M=1.0$, thus $\dfrac{L_2}{L_1}=\dfrac{1}{M_2}\left(\dfrac{\gamma+1}{2}\right)^{\frac{\gamma+1}{2(\gamma-1)}}\left(1+\dfrac{\gamma-1}{2}M_2^2\right)^{\frac{\gamma+1}{2(\gamma-1)}}$.
+
+(b) For$M_2=1.79$, $\gamma=1.67$, $\dfrac{L_2}{L_1}=1.343$.
 \end{answerbox}
 
 \newpage
