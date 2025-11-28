@@ -118,6 +118,7 @@
 
 \newcommand{\vect}[1]{\boldsymbol{\mathbf{#1}}}
 \newcommand{\pp}[1]{#1^{\prime}}
+\newcommand{\ReN}{\mathrm{Re}}
 
 
 \captionsetup{
@@ -1368,7 +1369,23 @@ $M=1.0$, thus $\dfrac{L_2}{L_1}=\dfrac{1}{M_2}\left(\dfrac{\gamma+1}{2}\right)^{
 }
 
 \begin{answerbox}
+(a) $M_1=0.45$, at exit $M_2=1$.
 
+Check the table $\dfrac{f\Delta x}{D}=\dfrac{fL_{\max 1}}{D}=1.566$.
+
+And $\Delta x=8$\,\si{m}, $D=0.08$\,\si{m}.
+
+Thus $f=0.0313$.
+
+(b) The pipe is made of cast iron, check the table: $\varepsilon=0.00026$\,\si{m}.
+
+Thus $\dfrac{\varepsilon}{D}=0.00323$.
+
+For $f=0.313$, view the Moody diagram we gain: $\ReN=2.2\times 10^4$.
+
+And $\ReN=\dfrac{\rho V D}{\mu}$, $\rho=\dfrac{p}{R T}$, $V=M\sqrt{\gamma R T}$.
+
+So the inlet pressure $p_1=2730$\,\si{Pa}.
 \end{answerbox}
 
 \question{9.13}{Ambient air at \SI{60}{\Fahrenheit} and $14.7$ psia accelerates isentropically into a $12$-in.-diameter duct. After $100$\,\si{ft} the duct transitions into an $8 \times 8$ in. square section where the Mach number is $0.50$. Neglect all frictional effects except in the constant-area duct, where $f = 0.04$.\\
@@ -1378,7 +1395,35 @@ $M=1.0$, thus $\dfrac{L_2}{L_1}=\dfrac{1}{M_2}\left(\dfrac{\gamma+1}{2}\right)^{
 }
 
 \begin{answerbox}
+(a) $M_3=0.50$, Thus $\dfrac{A_3}{A^{*}_3}=1.34$.
 
+The process of the flow contracting into an $8\times 8$ in. square is an isentropic compression, and $\dfrac{A_2}{A_3}=1.77$.
+
+Thus $\dfrac{A_2}{A_2^{*}}=2.37$.
+
+Thus $M_2=0.254$, so $\dfrac{fL_{\max 2}}{D}=8.15$.
+
+And $\dfrac{f\Delta x}{D}=4$, so $\dfrac{fL_{\max 1}}{D}=\dfrac{fL_{\max 2}}{D}+\dfrac{f\Delta x}{D}=12.15$.
+
+So $M_1=0.216$.
+
+(b) For $T_t=\text{const}$ during the process, $\dfrac{T_3}{T_{t3}}=0.952$, $T_t=520$\,\si{\Rankine}.
+
+So $T_3=495$\,\si{\Rankine}.
+
+Check the table we obtain: $\dfrac{p_1}{p_{t1}}=0.968$, $\dfrac{p_1}{p^{*}}=5.05$
+
+$\dfrac{p_2}{p^{*}}=4.29$, $\dfrac{p_2}{p_{t2}}=0.956$, $\dfrac{p_3}{p_{t3}}=0.843$.
+
+For $p_{t1}=14.7$\,\si{psia}, $p_{t2}=p_{t3}$.
+
+Thus $p_3=\dfrac{p_3}{p_{t3}}\dfrac{p_{t2}}{p_2}\dfrac{p_2}{p^{*}}\dfrac{p^{*}}{p_1}\dfrac{p_1}{p_{t1}}p_{t1}=10.65$\,\si{psia}.
+
+(c) Check the table $\dfrac{fL_{\max 3}}{D_e}=1.06906$.
+
+$f=0.04$, $D_e=\dfrac{4A}{P}=0.67$\,\si{ft}.
+
+Thus $L_{\max 3}=17.82$\,\si{ft}.
 \end{answerbox}
 
 \question{9.17}{For a nozzle–duct system similar to that of Problem 9.16, the nozzle is designed to produce a Mach number of $2.8$ with $\gamma = 1.4$. The inlet conditions are $p_{t1} = \SI{10}{bar}$ and $T_{t1} = \SI{370}{K}$. The duct is $8$ diameters in length, but the duct friction factor is unknown. The receiver pressure is fixed at \SI{3}{bar} and a normal shock has formed at the duct exit.\\
@@ -1388,7 +1433,34 @@ $M=1.0$, thus $\dfrac{L_2}{L_1}=\dfrac{1}{M_2}\left(\dfrac{\gamma+1}{2}\right)^{
 }
 
 \begin{answerbox}
+(a) T-s diagram as follow:
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{pic/A9.17.png}
+\end{figure}
+
+(b) $M_3=2.8$, Thus $\dfrac{p_3}{p_{t3}}=0.03685$, $\dfrac{p_3}{p^{*}}=0.24414$.
+
+Thus $\dfrac{p_5}{p^{*}}=\dfrac{p_5}{p_{t1}}\dfrac{p_{t1}}{p_{t3}}\dfrac{p_{t3}}{p_3}\dfrac{p_3}{p^{*}}=1.988$.
+
+So $M_5=0.536$. So $M_4=2.287$.
+
+So $\dfrac{fL_{\max 3}}{D}=0.48976$, $\dfrac{fL_{\max 4}}{D}=0.38305$.
+
+And $\dfrac{f\Delta x}{D}=\dfrac{fL_{\max 3}}{D}-\dfrac{fL_{\max 4}}{D}$, $\Delta x=8D$.
+
+Thus $f=0.0133$.
+
+(c) In Fanno Flow: 
+
+$\Delta s_1=R \ln\dfrac{M_4}{M_3}\left(\dfrac{1+[(\gamma-1)/2]M_3^2}{1+[(\gamma-1)/2]M_4^2}\right)^{\frac{\gamma+1}{2(\gamma-1)}}=137.5$\,\si{J/(kg\cdot K)}.
+
+After shock: $\dfrac{p_{t5}}{p_{t4}}=0.589=e^{-\Delta s_2/R}$.
+
+Thus $\Delta s_2=151.9$\,\si{J/(kg\cdot K)}.
+
+Thus $\Delta s=289.4$\,\si{J/(kg\cdot K)}.
 \end{answerbox}
 
 \end{document}
